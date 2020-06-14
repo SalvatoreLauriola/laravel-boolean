@@ -23,4 +23,5 @@ Route::get('/faq', 'StaticPageController@faq')->name('static-pages.faq');
 Route::get('/students','StudentController@index')->name('student.index');
 
 //singolo studente
-Route::get('/students/show/{id}','StudentController@show')->name('student.show');
+// Route::get('/students/show/{id}','StudentController@show')->name('student.show');
+Route::get('/students/show/{slug}','StudentController@show')->name('student.show');
